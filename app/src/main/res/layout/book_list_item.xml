@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="book"
+            type="com.example.pract.Book" />
+
+
+    </data>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{book.bookName}"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{book.unitPrice}"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+</layout>
